@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Custom Video Player case study - Matheus Chrispim" />
+
+  <title>Custom Video Player | Case Study</title>
+
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/project.css" />
+</head>
+<body>
+
+  <main class="project-page">
+
+    <!-- HERO -->
+    <section class="section">
+      <div class="container">
+        <h1>Custom Video Player</h1>
+
+        <p>
+          Custom video player built to control playback behavior and reduce content sharing
+          in restricted environments such as Wix.
+        </p>
+
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          <a href="#" target="_blank" rel="noopener">Source Code</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREVIEW -->
+    <section class="section">
+      <div class="container">
+        <h2>Preview</h2>
+
+        <div class="project-preview">
+
+            <a 
+            href="https://SEU-LINK.github.io/video-player/" 
+            target="_blank" 
+            rel="noopener"
+            class="project-preview-link"
+            >
+            <div class="project-preview-content">
+                <span>Open Live Demo</span>
+            </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section">
+      <div class="container">
+        <h2>Problem</h2>
+
+        <p>
+          Default video players provided by platforms like Wix offer limited control over
+          user interaction, making it difficult to prevent content misuse, enforce playback
+          rules, or customize the viewing experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="section">
+      <div class="container">
+        <h2>Solution</h2>
+
+        <p>
+          A custom video player was implemented using the YouTube Iframe API, replacing the
+          default controls with a fully controlled UI layer. The solution focuses on
+          interaction control, UI customization, and adaptability to platform constraints.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <h2>Key Features</h2>
+
+        <ul>
+          <li>Custom play/pause control with overlay interaction</li>
+          <li>Progress tracking with seek and time preview</li>
+          <li>Volume control with mute toggle</li>
+          <li>Playback speed and quality settings</li>
+          <li>Fullscreen support</li>
+          <li>UI overlay to restrict default interactions</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TECHNICAL -->
+    <section class="section">
+      <div class="container">
+        <h2>Technical Implementation</h2>
+
+        <ul>
+          <li>Integration with YouTube Iframe API</li>
+          <li>Single-file architecture due to Wix constraints</li>
+          <li>Custom UI layer replacing default player controls</li>
+          <li>Event-driven state synchronization</li>
+          <li>Scoped DOM interaction to avoid conflicts</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONSTRAINTS -->
+    <section class="section">
+      <div class="container">
+        <h2>Constraints</h2>
+
+        <p>
+          The implementation was designed to run inside Wix, which restricts modular file
+          structures and external script handling. The player was intentionally built as a
+          single-file component while maintaining internal organization and scoped logic.
+        </p>
+      </div>
+    </section>
+
+    <!-- USE CASE -->
+    <section class="section">
+      <div class="container">
+        <h2>Use Case</h2>
+
+        <p>
+          This solution is suitable for educational platforms, membership areas, or any
+          environment where content control and structured playback are required.
+        </p>
+      </div>
+    </section>
+
+    <!-- LEARNINGS -->
+    <section class="section">
+      <div class="container">
+        <h2>Key Learnings</h2>
+
+        <ul>
+          <li>Working under platform constraints</li>
+          <li>Designing UI over third-party APIs</li>
+          <li>Controlling user interaction through overlays</li>
+          <li>Balancing flexibility and restrictions in frontend architecture</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
