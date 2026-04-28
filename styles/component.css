@@ -1,8 +1,4 @@
-/* styles/components.css */
-
-/* =========================
-   Card Component
-========================= */
+/* Card Component*/
 .card {
   background: var(--color-card);
   border: 1px solid var(--color-border);
@@ -37,9 +33,7 @@
   box-shadow: var(--shadow-md);
 }
 
-/* =========================
-   Button / Link Actions
-========================= */
+/*Button / Link Actions*/
 .card-actions a {
   font-size: var(--font-size-sm);
   padding: var(--space-2) var(--space-3);
@@ -55,9 +49,7 @@
   border-color: var(--color-primary);
 }
 
-/* =========================
-   Navigation Links
-========================= */
+/* Navigation Links*/
 .nav a {
   position: relative;
   font-size: var(--font-size-sm);
@@ -79,9 +71,7 @@
   width: 100%;
 }
 
-/* =========================
-   Contact Links
-========================= */
+/*Contact Links */
 .contact-links a {
   border: 1px solid var(--color-border);
   padding: var(--space-2) var(--space-4);
@@ -96,17 +86,13 @@
   border-color: var(--color-primary);
 }
 
-/* =========================
-   Image Styling
-========================= */
+/* Image Styling*/
 .project-image {
   border-radius: var(--radius-sm);
   border: 1px solid var(--color-border);
 }
 
-/* =========================
-   Animation (Fade-in)
-========================= */
+/*Animation (Fade-in)*/
 .card {
   opacity: 0;
   transform: translateY(20px);
@@ -118,10 +104,42 @@
   transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-/* =========================
-   Focus Accessibility
-========================= */
+/*Focus Accessibility*/
 a:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
+}
+
+.contact-links {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contact-links a {
+  width: 48px;
+  height: 48px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text-muted);
+
+  transition: all 0.2s ease;
+}
+
+.contact-links a:hover {
+  background: var(--color-primary);
+  color: #0f172a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
 }

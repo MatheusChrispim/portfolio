@@ -1,9 +1,3 @@
-/* styles/main.css */
-
-/* Imports (order matters) */
-@import url('./variables.css');
-@import url('./components.css');
-
 /* Base / Reset */
 * {
   box-sizing: border-box;
@@ -16,7 +10,12 @@ html, body {
 
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--color-bg);
+  background: radial-gradient(
+      circle at top,
+      rgba(56, 189, 248, 0.08),
+      transparent 40%
+    ),
+    var(--color-bg);
   color: var(--color-text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
